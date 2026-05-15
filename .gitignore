@@ -1,3 +1,61 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+/.import/
+*.import
+*.translation
+
+# Godot local exports, captures, and runtime output
+exports/
+builds/
+export_presets.cfg
+*.pck
+*.apk
+*.aab
+*.dmg
+*.app
+*.exe
+*.log
+stelle-env/screenshots/
+stelle-env/recordings/
+stelle-env/captures/
+
+# Python caches and build output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local archives and downloaded vendor packages
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Training and experiment artifacts
+data/generated/
+datasets/generated/
+runs/
+wandb/
+mlruns/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+.vscode/
+.idea/

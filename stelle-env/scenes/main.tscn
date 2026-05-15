@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ch4rcghgxdtom"]
+
+[ext_resource type="Script" uid="uid://c71qahln68djk" path="res://scripts/procedural_room_generator.gd" id="1_room_generator"]
+
+[node name="Main" type="Node3D" unique_id=98324462]
+script = ExtResource("1_room_generator")

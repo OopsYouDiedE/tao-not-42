@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://d0a1f63vhce60"]
+
+[ext_resource type="Script" uid="uid://i73b8cgfd" path="res://scripts/scifi_arena_generator.gd" id="1_scifi_arena_generator"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_obvi7"]
+
+[sub_resource type="Sky" id="Sky_d7qwp"]
+sky_material = SubResource("ProceduralSkyMaterial_obvi7")
+
+[sub_resource type="Environment" id="Environment_scifi_arena"]
+background_mode = 2
+background_color = Color(0.15, 0.18, 0.22, 1)
+sky = SubResource("Sky_d7qwp")
+ambient_light_source = 2
+ambient_light_color = Color(0.64, 0.69, 0.76, 1)
+ambient_light_energy = 0.48
+tonemap_mode = 3
+tonemap_exposure = 0.72
+tonemap_white = 1.15
+ssao_enabled = true
+glow_enabled = true
+adjustment_enabled = true
+adjustment_brightness = 1.02
+adjustment_contrast = 1.08
+adjustment_saturation = 0.92
+
+[node name="SciFiArena" type="Node3D" unique_id=1336036053]
+script = ExtResource("1_scifi_arena_generator")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=431817401]
+environment = SubResource("Environment_scifi_arena")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1805056614]
+transform = Transform3D(0.82903755, 0.45239666, -0.32868525, 0, 0.58778507, 0.8090171, 0.55919296, -0.67070556, 0.4872959, 0, 0, 0)
+light_energy = 1.55
+light_indirect_energy = 0.55
+shadow_enabled = true
+shadow_opacity = 0.48
+shadow_blur = 1.65
+directional_shadow_max_distance = 42.0
+
+[node name="SkyFill" type="DirectionalLight3D" parent="." unique_id=1867375872]
+transform = Transform3D(-0.78801227, -0.37903783, 0.48514643, 0, 0.78801084, 0.6156614, -0.6156596, 0.48514873, -0.6209622, 0, 0, 0)
+light_energy = 0.22
+light_indirect_energy = 0.35
