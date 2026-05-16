@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://ch4rcghgxdtom"]
+[gd_scene load_steps=2 format=3 uid="uid://ch4rcghgxdtom"]
 
-[ext_resource type="Script" uid="uid://c71qahln68djk" path="res://scripts/procedural_room_generator.gd" id="1_room_generator"]
+[ext_resource type="PackedScene" path="res://scenes/environment.tscn" id="1_environment"]
 
-[node name="Main" type="Node3D" unique_id=98324462]
-script = ExtResource("1_room_generator")
+[node name="Main" type="Node3D"]
+
+[node name="Environment" parent="." instance=ExtResource("1_environment")]

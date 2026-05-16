@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://djnd1y3qmip1d"]
+
+[ext_resource type="Texture2D" uid="uid://b6luk4m70q51v" path="res://assets/material/wall_blue_painted_concrete/wall_blue_painted_concrete_diff_2k.png" id="1_np18x"]
+[ext_resource type="Texture2D" uid="uid://bk1jo70hu7lx5" path="res://assets/material/wall_blue_painted_concrete/wall_blue_painted_concrete_arm_2k.png" id="2_uk72e"]
+[ext_resource type="Texture2D" uid="uid://bsmrtxvc8ghr5" path="res://assets/material/wall_blue_painted_concrete/wall_blue_painted_concrete_nor_gl_2k.png" id="3_qm4j9"]
+
+[resource]
+resource_name = "wall_blue_painted_concrete"
+albedo_texture = ExtResource("1_np18x")
+metallic_texture = ExtResource("2_uk72e")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_uk72e")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_qm4j9")
+clearcoat = 0.08
+clearcoat_roughness = 0.86
+ao_enabled = true
+ao_texture = ExtResource("2_uk72e")

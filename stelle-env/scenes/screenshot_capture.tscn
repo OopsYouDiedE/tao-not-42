@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d2kk8xcf11jdj"]
+
+[ext_resource type="PackedScene" uid="uid://b7tam4lyt2itn" path="res://scenes/environment.tscn" id="1_environment"]
+[ext_resource type="Script" uid="uid://ba5qsmksibosh" path="res://scripts/save_viewport_screenshot.gd" id="2_screenshot"]
+[ext_resource type="PackedScene" uid="uid://dnpgmm82v45o0" path="res://assets/blender_source/wall_middle_segment_geo.blend" id="3_lggcj"]
+
+[node name="ScreenshotCapture" type="Node" unique_id=135777695]
+
+[node name="Environment" parent="." unique_id=1523089354 instance=ExtResource("1_environment")]
+
+[node name="Screenshot" type="Node" parent="." unique_id=2142424046]
+script = ExtResource("2_screenshot")
+
+[node name="wall_middle_segment_geo" parent="." unique_id=98559111 instance=ExtResource("3_lggcj")]

@@ -1,6 +1,6 @@
 extends Node
 
-@export var output_path := "res://screenshots/procedural_room_preview.png"
+@export var output_path := "res://screenshots/environment_preview.png"
 @export var output_size := Vector2i(1600, 1000)
 @export var warmup_frames := 8
 
